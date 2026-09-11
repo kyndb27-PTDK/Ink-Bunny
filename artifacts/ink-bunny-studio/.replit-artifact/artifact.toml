@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Ink Bunny Tattoo Studio"
+description = "A cinematic, gothic tattoo studio homepage for Ink Bunny in Bradford, centered on the supplied artwork with a premium booking and portfolio experience."
+version = "1.0.0"
+id = "artifacts/ink-bunny-studio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24409
+
+[services.development]
+run = "pnpm --filter @workspace/ink-bunny-studio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ink-bunny-studio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ink-bunny-studio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24409"
+BASE_PATH = "/"

@@ -1,0 +1,1 @@
+- [WebGL preview fallback](webgl-preview.md) — detect WebGL before mounting R3F and keep a CSS fallback so previews remain usable without GPU support.

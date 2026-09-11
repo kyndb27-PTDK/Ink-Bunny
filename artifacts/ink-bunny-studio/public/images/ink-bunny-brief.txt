@@ -1,0 +1,594 @@
+INK BUNNY TATTOO STUDIO — HOMEPAGE
+
+Build the homepage for a premium tattoo studio called Ink Bunny.
+
+I will provide reference images/assets. Treat the supplied reference image as the primary visual source of truth. The goal is to reproduce the visual design and composition as closely as technically possible, NOT to create a generic tattoo website.
+
+CORE REQUIREMENT
+
+Do NOT reinterpret, redesign, simplify, or replace the visual identity.
+
+Preserve:
+
+- Overall composition
+- Dark colour palette
+- Heavy-metal/gothic atmosphere
+- Neon lighting
+- Typography style
+- Text hierarchy
+- Spacing
+- Image positioning
+- Character positioning
+- Decorative skull elements
+- Neon signage
+- Overall proportions
+- Visual mood
+- Strong contrast between darkness and neon
+- Premium cinematic appearance
+
+The site should feel like a dark, high-end tattoo studio with heavy-metal/gothic influences, rather than a conventional business website.
+
+---
+
+TECHNOLOGY
+
+Build this as a real production-quality web application using:
+
+- React
+- TypeScript
+- Vite
+- Three.js
+- React Three Fiber
+- @react-three/drei
+- GSAP
+- GSAP ScrollTrigger
+- CSS/Tailwind where appropriate
+
+Keep the code modular and maintainable.
+
+Do not put the entire website into one enormous component.
+
+Use reusable components.
+
+---
+
+HOMEPAGE STRUCTURE
+
+Create the homepage in the following order:
+
+1. Full-screen hero
+2. Intro / studio statement
+3. Awards / credibility section
+4. Tattoo services
+5. Featured tattoo work / portfolio
+6. Artists
+7. Studio experience
+8. Private & secure section
+9. Call-to-action
+10. Footer
+
+The exact visual treatment should follow the supplied reference rather than looking like a generic implementation of these sections.
+
+---
+
+HERO SECTION
+
+The hero must be the strongest visual element on the page.
+
+Create a full viewport hero approximately:
+
+100vw × 100vh
+
+Use the supplied Ink Bunny artwork/assets wherever provided.
+
+The main bunny character must remain visually consistent with the supplied artwork.
+
+Do NOT generate a different bunny.
+
+Do NOT substitute a generic 3D rabbit.
+
+Do NOT alter the character's identity.
+
+Leave the architecture ready for a future ".glb" 3D bunny model.
+
+Create the 3D scene using React Three Fiber in a dedicated component so that a GLB model can easily be inserted later.
+
+Example structure:
+
+Hero
+ ├── HeroBackground
+ ├── BunnyScene
+ ├── NeonSign
+ ├── HeroContent
+ └── ScrollIndicator
+
+---
+
+BUNNY / 3D ARCHITECTURE
+
+Prepare the project for a future 3D animated bunny.
+
+Create:
+
+src/
+  components/
+    3d/
+      BunnyScene.tsx
+      BunnyModel.tsx
+      StudioEnvironment.tsx
+      NeonLighting.tsx
+
+The future bunny model should support:
+
+- GLB/GLTF
+- Animation clips
+- Idle animation
+- Tattooing animation
+- Head movement
+- Ear movement
+- Camera interaction
+- Scroll-driven animation
+
+For now, if the actual 3D model is not supplied, use a visually appropriate placeholder rather than inventing a permanent character.
+
+Make replacing the placeholder with:
+
+/public/models/bunny.glb
+
+simple.
+
+---
+
+HERO TYPOGRAPHY
+
+Use a bold display typeface with a gothic/heavy-metal character.
+
+The typography must feel:
+
+- aggressive
+- premium
+- cinematic
+- tattoo-inspired
+- slightly gothic
+- highly readable
+
+Do not use playful cartoon typography.
+
+Use appropriate web fonts where licensing permits.
+
+Create clear typography hierarchy:
+
+Small eyebrow text
+↓
+Large primary headline
+↓
+Supporting statement
+↓
+Primary CTA
+Secondary CTA
+
+The headline should be large and dominant without covering the bunny.
+
+---
+
+NEON SIGN
+
+Include the neon sign from the supplied artwork/reference.
+
+The sign should read:
+
+GET INKED OR DIE NAKED
+
+Use neon blue/pink lighting consistent with the reference.
+
+Create a subtle animated neon effect:
+
+- gentle flicker
+- slight brightness variation
+- subtle glow
+- realistic light spill onto nearby surfaces
+
+Do NOT make the flicker excessive or distracting.
+
+The neon should look like a physical sign rather than ordinary text with a CSS glow.
+
+---
+
+BACKGROUND
+
+Use a predominantly black/dark environment.
+
+The background should contain subtle:
+
+- gothic architecture
+- tattoo-studio elements
+- shadows
+- skull decorations
+- metal textures
+- atmospheric haze
+- subtle neon reflections
+
+Do not make the background brighter than the character and headline.
+
+Use gradients/vignettes to maintain focus on the hero content.
+
+---
+
+SKULLS / DECORATIVE ELEMENTS
+
+Use the supplied skull artwork wherever possible.
+
+Position decorative skulls and gothic elements naturally around the composition.
+
+Do not randomly scatter decorative elements.
+
+They should reinforce the original reference composition.
+
+---
+
+COLOUR PALETTE
+
+Primary:
+
+- near-black
+- charcoal
+- dark grey
+
+Accent:
+
+- neon blue
+- neon pink
+- small amounts of white
+
+Avoid excessive colours.
+
+The neon should be an accent rather than turning the whole website into a bright cyberpunk design.
+
+---
+
+HERO ANIMATION
+
+Use subtle cinematic animation.
+
+On initial load:
+
+1. Background fades in.
+2. Neon elements illuminate.
+3. Bunny enters/settles naturally.
+4. Headline appears.
+5. CTA appears.
+6. Scroll indicator becomes visible.
+
+Animation should be smooth and premium.
+
+Avoid excessive bouncing, spinning or gimmicky animations.
+
+---
+
+SCROLL EXPERIENCE
+
+Use GSAP ScrollTrigger.
+
+As the user scrolls:
+
+- Hero camera can subtly pull back.
+- Bunny can remain visually anchored.
+- Neon lighting can subtly change.
+- Background depth can shift.
+- Hero content can fade/move naturally.
+- Transition into the next section should feel cinematic.
+
+Do NOT lock the user into a frustrating full-screen scroll experience.
+
+Normal mobile scrolling must remain possible.
+
+---
+
+INTRO SECTION
+
+Immediately below the hero, create an editorial-style introduction.
+
+It should communicate that Ink Bunny is a premium tattoo studio.
+
+Use large typography and generous spacing.
+
+The section should feel like part of the same visual world as the hero.
+
+Avoid generic cards and standard SaaS layouts.
+
+---
+
+AWARDS / CREDIBILITY
+
+Create an awards/recognition section.
+
+Use a sophisticated editorial layout.
+
+Possible structure:
+
+AWARD-WINNING
+TATTOO ARTISTRY
+
+[award]
+[award]
+[award]
+
+Make the typography and spacing feel premium.
+
+Do not use fake awards or fake accreditation.
+
+Use placeholder labels where actual information hasn't been supplied.
+
+---
+
+SERVICES
+
+Create a tattoo services section.
+
+Possible categories:
+
+- Custom Tattoos
+- Blackwork
+- Realism
+- Neo-Traditional
+- Fine Line
+- Cover Ups
+- Large Scale Pieces
+
+Use placeholder content where necessary.
+
+The design should remain consistent with the gothic/neon aesthetic.
+
+Avoid generic Bootstrap-style service cards.
+
+---
+
+PORTFOLIO
+
+Create a visually strong tattoo portfolio section.
+
+Use supplied images if available.
+
+If images are not yet available, create clearly marked image placeholders that can easily be replaced.
+
+Portfolio should support:
+
+- image grid
+- large featured image
+- hover interaction
+- category filtering architecture
+- responsive layout
+
+Do not generate fake tattoo images if real assets have been supplied.
+
+---
+
+ARTISTS
+
+Create an artist section with space for:
+
+- Artist image
+- Name
+- Speciality
+- Short biography
+- Social/contact link
+
+Use a cinematic editorial layout.
+
+---
+
+STUDIO EXPERIENCE
+
+Create a section describing the Ink Bunny studio experience.
+
+Use large imagery, atmospheric backgrounds and layered typography.
+
+Maintain the dark/gothic visual language.
+
+---
+
+PRIVATE & SECURE
+
+Create a section communicating that the tattoo experience is private, professional and secure.
+
+Use strong typography and a sophisticated layout.
+
+The section should visually break up the page without breaking the overall aesthetic.
+
+---
+
+FINAL CTA
+
+Create a strong final call-to-action.
+
+Example concept:
+
+READY TO GET INKED?
+
+BOOK YOUR SESSION
+
+Use a large CTA button.
+
+Make this section visually memorable.
+
+---
+
+FOOTER
+
+Create a premium dark footer containing:
+
+- Ink Bunny logo
+- Navigation
+- Social links
+- Contact information placeholder
+- Opening hours placeholder
+- Booking CTA
+- Copyright
+
+Keep it minimal.
+
+---
+
+RESPONSIVE DESIGN
+
+The website MUST be designed for:
+
+- Android phones
+- iPhones
+- tablets
+- laptops
+- desktop monitors
+- large screens
+
+Do not simply shrink the desktop design.
+
+Create a dedicated mobile composition.
+
+On mobile:
+
+- preserve the bunny's visual importance
+- prevent text overlap
+- keep CTA buttons accessible
+- reduce unnecessary 3D effects
+- reduce particle count
+- reduce shadow quality where necessary
+- optimise image loading
+- maintain smooth scrolling
+
+Target good performance on mid-range Android phones.
+
+---
+
+PERFORMANCE
+
+This is a real production website.
+
+Optimise for:
+
+- fast initial loading
+- responsive images
+- lazy loading
+- compressed assets
+- efficient Three.js rendering
+- reduced mobile rendering quality
+- minimal unnecessary JavaScript
+- code splitting where appropriate
+
+Use device-aware rendering for the 3D scene.
+
+Desktop can use higher quality.
+
+Mobile should use a lighter configuration.
+
+---
+
+ACCESSIBILITY
+
+Include:
+
+- semantic HTML
+- keyboard navigation
+- accessible buttons
+- meaningful alt text
+- appropriate contrast
+- reduced-motion support
+
+Respect:
+
+prefers-reduced-motion
+
+and provide a reduced animation mode.
+
+---
+
+PROJECT STRUCTURE
+
+Use a clean architecture similar to:
+
+src/
+├── components/
+│   ├── navigation/
+│   ├── hero/
+│   ├── sections/
+│   ├── portfolio/
+│   ├── artists/
+│   ├── booking/
+│   └── 3d/
+│
+├── pages/
+│   └── Home.tsx
+│
+├── assets/
+│
+├── hooks/
+│
+├── utils/
+│
+├── styles/
+│
+├── App.tsx
+└── main.tsx
+
+public/
+├── images/
+└── models/
+    └── bunny.glb
+
+---
+
+IMPORTANT ASSET RULE
+
+If I upload an image or asset, use that exact asset.
+
+Do not replace it with an AI-generated alternative.
+
+Do not change the bunny's face, clothing, proportions or identity.
+
+Do not create a different logo.
+
+Do not recreate the supplied neon sign differently.
+
+The uploaded assets are the source of truth.
+
+---
+
+CODE QUALITY
+
+Write clean, production-quality TypeScript.
+
+Avoid:
+
+- unnecessary dependencies
+- giant components
+- duplicated code
+- hardcoded positioning that breaks on mobile
+- excessive absolute positioning
+- fake functionality
+- broken buttons
+
+Create reusable components and sensible CSS.
+
+---
+
+FINAL REQUIREMENT
+
+Before considering the homepage complete:
+
+1. Test desktop layout.
+2. Test Android/mobile layout.
+3. Test tablet layout.
+4. Test navigation.
+5. Test animations.
+6. Test the 3D scene.
+7. Test page performance.
+8. Check for console errors.
+9. Check that all supplied assets load correctly.
+10. Make sure the website can be committed to GitHub and deployed to Vercel.
+
+The final result should feel like a premium award-winning tattoo studio website, with the supplied Ink Bunny artwork remaining the central visual identity.
+
+Most importantly:
+
+FOLLOW THE UPLOADED REFERENCE IMAGE.
+
+Do not turn this into a generic AI-generated tattoo website.
