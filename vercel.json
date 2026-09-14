@@ -1,0 +1,10 @@
+{
+  "buildCommand": "pnpm run build:ink-bunny",
+  "outputDirectory": "artifacts/ink-bunny-studio/dist/public",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
