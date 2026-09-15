@@ -1,4 +1,5 @@
 {
+  "framework": "vite",
   "buildCommand": "pnpm --filter @workspace/ink-bunny-studio run build",
   "outputDirectory": "artifacts/ink-bunny-studio/dist/public",
   "rewrites": [
