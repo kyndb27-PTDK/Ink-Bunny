@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm -w run build:ink-bunny",
+  "buildCommand": "pnpm --filter @workspace/ink-bunny-studio run build",
   "outputDirectory": "artifacts/ink-bunny-studio/dist/public",
   "rewrites": [
     {
