@@ -1,6 +1,6 @@
-# Ink Bunny Tattoo Studio
+# [Project name]
 
-Premium single-page website for Ink Bunny Tattoo Studio, a private Bradford tattoo studio.
+_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
 
 ## Run & Operate
 
@@ -22,33 +22,23 @@ Premium single-page website for Ink Bunny Tattoo Studio, a private Bradford tatt
 
 ## Where things live
 
-- `artifacts/ink-bunny-studio/src/pages/Home.tsx` — homepage composition
-- `artifacts/ink-bunny-studio/src/components/hero/` — hero artwork and motion
-- `artifacts/ink-bunny-studio/src/components/sections/` — studio narrative sections and footer
-- `artifacts/ink-bunny-studio/src/components/3d/` — future-ready React Three Fiber scene boundary
-- `artifacts/ink-bunny-studio/src/index.css` — shared Ink Bunny visual language and responsive rules
-- `artifacts/ink-bunny-studio/public/ink-bunny-reference.png` — supplied hero artwork
+_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
 
 ## Architecture decisions
 
-- The supplied artwork remains the source of truth for the hero, including the bunny, logo, and neon sign.
-- The homepage is frontend-only for now; booking is a real client-side interaction ready to connect to a scheduling backend later.
-- The 3D layer is dynamically loaded and skipped when WebGL is unavailable so the artwork never depends on GPU support.
+_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
 
 ## Product
 
-- Full responsive studio homepage with anchor navigation
-- Consultation booking dialog with confirmation state
-- Filterable placeholder portfolio architecture for future tattoo work
-- Responsive mobile navigation and reduced-motion support
+_Describe the high-level user-facing capabilities of this app once they exist._
 
 ## User preferences
 
-Keep the supplied Ink Bunny reference artwork central; do not replace it with generic tattoo imagery.
+_Populate as you build — explicit user instructions worth remembering across sessions._
 
 ## Gotchas
 
-- The frontend workflow provides `PORT` and `BASE_PATH`; use the managed workflow for previews.
+_Populate as you build — sharp edges, "always run X before Y" rules._
 
 ## Pointers
 

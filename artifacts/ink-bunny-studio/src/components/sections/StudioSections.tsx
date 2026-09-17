@@ -38,9 +38,10 @@ export function StudioSections({ onBook }: StudioSectionsProps) {
           </div>
           <div>
             <p className="statement-copy">
-              Ink Bunny is a private Bradford studio for bold, intentional,
-              bespoke work. We build tattoos with the same care as any lasting
-              object: slowly, honestly, and with an eye for the years ahead.
+              Tattooing and piercing are more than just a service. They're an
+              experience built around creativity, individuality, and
+              self-expression. The space is designed to feel welcoming,
+              inclusive, and genuinely comfortable for everyone.
             </p>
             <div className="statement-note">
               Established for the permanently curious

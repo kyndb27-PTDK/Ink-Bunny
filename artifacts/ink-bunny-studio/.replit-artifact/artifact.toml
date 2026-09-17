@@ -1,7 +1,7 @@
 kind = "web"
 previewPath = "/"
 title = "Ink Bunny Tattoo Studio"
-description = "A cinematic, gothic tattoo studio homepage for Ink Bunny in Bradford, centered on the supplied artwork with a premium booking and portfolio experience."
+description = "A cinematic gothic tattoo studio website for Ink Bunny in Bradford, with a portfolio-led experience and booking flow."
 version = "1.0.0"
 id = "artifacts/ink-bunny-studio"
 router = "path"
